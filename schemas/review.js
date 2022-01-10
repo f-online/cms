@@ -55,6 +55,25 @@ export default {
       type: "text",
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: "countries",
+      title: "Zugeordnete Länder",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: [
+            {
+              type: "country",
+            },
+          ],
+          options: {
+            disableNew: true,
+          },
+        },
+      ],
+      validation: (Rule) => Rule.required(),
+    },
   ],
   initialValue: {
     platform: "android",

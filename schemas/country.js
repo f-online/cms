@@ -7,8 +7,8 @@ export default {
   icon,
   fields: [
     {
-      name: "country",
-      title: "Land",
+      name: "name",
+      title: "Name des Landes",
       type: "string",
       validation: (Rule) => Rule.required(),
     },
@@ -20,22 +20,13 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: "teammembers",
-      title: "Team",
-      type: "array",
-      of: [
-        {
-          type: "reference",
-          to: [
-            {
-              type: "team",
-            },
-          ],
-          options: {
-            disableNew: true,
-          },
-        },
-      ],
+      name: "logo",
+      title: "Logo",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+      validation: (Rule) => Rule.required(),
     },
   ],
 };

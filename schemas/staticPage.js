@@ -43,6 +43,9 @@ export default {
         {
           type: "faqObject",
         },
+        {
+          type: "reviewObject",
+        },
       ],
     },
   ],

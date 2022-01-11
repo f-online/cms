@@ -1,8 +1,8 @@
-import { FaQuestionCircle as icon } from "react-icons/fa";
+import { FaThumbsUp as icon } from "react-icons/fa";
 
 export default {
-  name: "faqObject",
-  title: "FAQ",
+  name: "reviewObject",
+  title: "Reviews",
   type: "object",
   icon,
   fields: [
@@ -21,7 +21,7 @@ export default {
       name: "limit",
       title: "Limit",
       description:
-        "Begrenzt die Anzahl der angezeigten Fragen und verlinkt auf die FAQ Seite, falls Limit gesetzt.",
+        "Begrenzt die Anzahl der angezeigten Reviews und verlinkt auf die Review Seite, falls Limit gesetzt.",
       type: "number",
     },
   ],

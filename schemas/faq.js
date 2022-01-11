@@ -15,7 +15,12 @@ export default {
     {
       name: "answer",
       title: "Antwort",
-      type: "string",
+      type: "array",
+      of: [
+        {
+          type: "block",
+        },
+      ],
       validation: (Rule) => Rule.required(),
     },
     {

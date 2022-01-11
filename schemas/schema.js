@@ -8,6 +8,8 @@ import faq from "./faq";
 import review from "./review";
 import team from "./team";
 import country from "./country";
+import section from "./Section";
+import staticPage from "./staticPage";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -15,5 +17,5 @@ export default createSchema({
   name: "default",
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([team, review, faq, country]),
+  types: schemaTypes.concat([team, review, faq, country, section, staticPage]),
 });

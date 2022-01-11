@@ -1,7 +1,10 @@
+import { FaListAlt as icon } from "react-icons/fa";
+
 export default {
   name: "section",
   title: "Section",
   type: "object",
+  icon,
   fields: [
     {
       name: "title",

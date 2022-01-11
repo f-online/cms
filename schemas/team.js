@@ -1,4 +1,4 @@
-import { HiUsers as icon } from "react-icons/hi";
+import { FaUsers as icon } from "react-icons/fa";
 
 export default {
   name: "team",

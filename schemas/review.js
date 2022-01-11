@@ -1,4 +1,4 @@
-import { HiThumbUp as icon } from "react-icons/hi";
+import { FaThumbsUp as icon } from "react-icons/fa";
 
 export default {
   name: "review",

@@ -34,6 +34,12 @@ export default {
         {
           type: "section",
         },
+        {
+          type: "quote",
+        },
+        {
+          type: "teamObject",
+        },
       ],
     },
   ],

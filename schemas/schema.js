@@ -4,11 +4,16 @@ import createSchema from "part:@sanity/base/schema-creator";
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
+// import objects
+import sectionObject from "../objects/section";
+import quoteObject from "../objects/quote";
+import teamObject from "../objects/team";
+
+// Import schemas
 import faq from "./faq";
 import review from "./review";
 import team from "./team";
 import country from "./country";
-import section from "./Section";
 import staticPage from "./staticPage";
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -17,5 +22,14 @@ export default createSchema({
   name: "default",
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([team, review, faq, country, section, staticPage]),
+  types: schemaTypes.concat([
+    sectionObject,
+    quoteObject,
+    teamObject,
+    team,
+    review,
+    faq,
+    country,
+    staticPage,
+  ]),
 });

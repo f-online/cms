@@ -1,4 +1,4 @@
-import { FaRegQuestionCircle as icon } from "react-icons/fa";
+import { FaQuestionCircle as icon } from "react-icons/fa";
 
 export default {
   name: "faq",

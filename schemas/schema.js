@@ -8,6 +8,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import sectionObject from "../objects/section";
 import quoteObject from "../objects/quote";
 import teamObject from "../objects/team";
+import faqObject from "../objects/faq";
 
 // Import schemas
 import faq from "./faq";
@@ -26,6 +27,7 @@ export default createSchema({
     sectionObject,
     quoteObject,
     teamObject,
+    faqObject,
     team,
     review,
     faq,

@@ -40,6 +40,9 @@ export default {
         {
           type: "teamObject",
         },
+        {
+          type: "faqObject",
+        },
       ],
     },
   ],

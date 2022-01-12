@@ -17,6 +17,7 @@ import review from "./review";
 import team from "./team";
 import country from "./country";
 import staticPage from "./staticPage";
+import feature from "./feature";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -32,6 +33,7 @@ export default createSchema({
     reviewObject,
     team,
     review,
+    feature,
     faq,
     country,
     staticPage,

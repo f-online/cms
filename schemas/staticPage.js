@@ -46,6 +46,9 @@ export default {
         {
           type: "reviewObject",
         },
+        {
+          type: "featureObject",
+        },
       ],
     },
   ],

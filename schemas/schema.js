@@ -10,6 +10,7 @@ import quoteObject from "../objects/quote";
 import teamObject from "../objects/team";
 import faqObject from "../objects/faq";
 import reviewObject from "../objects/review";
+import featureObject from "../objects/feature";
 
 // Import schemas
 import faq from "./faq";
@@ -31,6 +32,7 @@ export default createSchema({
     teamObject,
     faqObject,
     reviewObject,
+    featureObject,
     team,
     review,
     feature,

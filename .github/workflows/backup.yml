@@ -1,0 +1,28 @@
+name: Backup
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 4 * * *"
+jobs:
+  backup-dataset:
+    runs-on: ubuntu-18.04
+    name: Backup dataset
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Export dataset
+        uses: sanity-io/github-action-sanity@v0.2-alpha
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+        with:
+          args: dataset export production backups/backup-${{ steps.date.outputs.date }}.tar.gz
+      - name: Upload backup.tar.gz
+        uses: actions/upload-artifact@v2
+        with:
+          name: backup-${{ steps.date.outputs.date }}
+          path: backups/backup-${{ steps.date.outputs.date }}.tar.gz
+          retention-days: 30
+          # Fails the workflow if no files are found; defaults to 'warn'
+          if-no-files-found: error

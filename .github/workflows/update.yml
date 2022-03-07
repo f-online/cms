@@ -1,0 +1,26 @@
+name: Update
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "* 5 * * 0"
+jobs:
+  update-sanity:
+    runs-on: ubuntu-18.04
+    name: Update sanity
+    steps:
+      - uses: actions/checkout@v2
+      - name: Update sanity
+        uses: sanity-io/github-action-sanity@v0.2-alpha
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+        with:
+          args: upgrade
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: "[CI] Upgrade sanity to the newest version"
+          labels: CI
+          branch: sanity-update
+          base: main
+          commit-message: "[CI] Upgrade sanity"
+          delete-branch: true

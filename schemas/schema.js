@@ -11,6 +11,7 @@ import teamObject from "../objects/team";
 import faqObject from "../objects/faq";
 import reviewObject from "../objects/review";
 import featureObject from "../objects/feature";
+import seoObject from "../objects/seo";
 
 // Import schemas
 import faq from "./faq";
@@ -27,6 +28,7 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
+    seoObject,
     sectionObject,
     quoteObject,
     teamObject,

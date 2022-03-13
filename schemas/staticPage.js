@@ -11,7 +11,7 @@ export default {
       name: "title",
       title: "Titel",
       type: "string",
-      description: "Genutzt für den HTML Head",
+      description: "Titel des Dokumentes",
       validation: (Rule) => Rule.required(),
     },
     {
@@ -50,6 +50,11 @@ export default {
           type: "featureObject",
         },
       ],
+    },
+    {
+      name: "seo",
+      title: "SEO - Informationen",
+      type: "seoObject",
     },
   ],
   preview: {

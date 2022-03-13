@@ -12,6 +12,7 @@ import faqObject from "../objects/faq";
 import reviewObject from "../objects/review";
 import featureObject from "../objects/feature";
 import seoObject from "../objects/seo";
+import drivingschoolObject from "../objects/drivingschool";
 
 // Import schemas
 import faq from "./faq";
@@ -20,6 +21,7 @@ import team from "./team";
 import country from "./country";
 import staticPage from "./staticPage";
 import feature from "./feature";
+import drivingschoolregion from "./drivingschoolregion";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -35,9 +37,11 @@ export default createSchema({
     faqObject,
     reviewObject,
     featureObject,
+    drivingschoolObject,
     team,
     review,
     feature,
+    drivingschoolregion,
     faq,
     country,
     staticPage,

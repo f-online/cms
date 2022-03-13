@@ -24,23 +24,28 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: "countries",
-      title: "Zugeordnete Länder",
-      type: "array",
-      of: [
+      name: "country",
+      title: "Zugeordnetes Land",
+      type: "reference",
+      to: [
         {
-          type: "reference",
-          to: [
-            {
-              type: "country",
-            },
-          ],
-          options: {
-            disableNew: true,
-          },
+          type: "country",
         },
       ],
+      options: {
+        disableNew: true,
+      },
       validation: (Rule) => Rule.required(),
     },
   ],
+  preview: {
+    select: {
+      region: "region",
+      country: "country.name",
+    },
+    prepare: ({ region, country }) => ({
+      title: region,
+      subtitle: country,
+    }),
+  },
 };

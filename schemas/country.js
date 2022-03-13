@@ -28,7 +28,6 @@ export default {
       },
       validation: (Rule) => Rule.required(),
     },
-
     {
       name: "seo",
       title: "SEO - Informationen (Startseite Land)",

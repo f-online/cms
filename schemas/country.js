@@ -29,6 +29,42 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "staticPageHeaderLinks",
+      title: "Static Pages im Header",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: [
+            {
+              type: "staticPage",
+            },
+          ],
+          options: {
+            disableNew: true,
+          },
+        },
+      ],
+    },
+    {
+      name: "staticPageFooterLinks",
+      title: "Static Pages im Footer",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: [
+            {
+              type: "staticPage",
+            },
+          ],
+          options: {
+            disableNew: true,
+          },
+        },
+      ],
+    },
+    {
       name: "seo",
       title: "SEO - Informationen (Startseite Land)",
       type: "seoObject",

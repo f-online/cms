@@ -15,6 +15,20 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "country",
+      title: "Land",
+      type: "reference",
+      to: [
+        {
+          type: "country",
+        },
+      ],
+      options: {
+        disableNew: true,
+      },
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: "slug",
       title: "URL",
       type: "slug",
@@ -22,9 +36,11 @@ export default {
       inputComponent: SlugInput,
       options: {
         source: "title",
-        basePath: "https://f-online.at",
+        basePath: "https://f-online.app/{cc}",
         maxLength: 100,
       },
+      description:
+        "{cc} will be replaced by the countryCode of the chosen country",
     },
     {
       name: "sections",
@@ -61,10 +77,11 @@ export default {
     select: {
       title: "title",
       slug: "slug",
+      countryCode: "country.countryCode",
     },
-    prepare: ({ title, slug }) => ({
+    prepare: ({ title, slug, countryCode }) => ({
       title,
-      subtitle: `/${slug.current}`,
+      subtitle: `/${countryCode}/${slug.current}`,
     }),
   },
 };

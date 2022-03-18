@@ -27,4 +27,14 @@ export default {
       validation: (Rule) => Rule.required(),
     },
   ],
+  preview: {
+    select: {
+      title: "name",
+      country: "country.name",
+    },
+    prepare: ({ title, country }) => ({
+      title,
+      subtitle: country,
+    }),
+  },
 };

@@ -12,6 +12,7 @@ import faqObject from "../objects/faq";
 import reviewObject from "../objects/review";
 import featureObject from "../objects/feature";
 import seoObject from "../objects/seo";
+import loginObject from "../objects/login";
 
 // Import schemas
 import faq from "./faq";
@@ -37,6 +38,7 @@ export default createSchema({
     faqObject,
     reviewObject,
     featureObject,
+    loginObject,
     team,
     review,
     feature,

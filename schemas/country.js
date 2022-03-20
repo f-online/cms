@@ -29,6 +29,34 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "sections",
+      title: "Sections",
+      type: "array",
+      of: [
+        {
+          type: "section",
+        },
+        {
+          type: "quote",
+        },
+        {
+          type: "teamObject",
+        },
+        {
+          type: "faqObject",
+        },
+        {
+          type: "reviewObject",
+        },
+        {
+          type: "featureObject",
+        },
+        {
+          type: "loginObject",
+        },
+      ],
+    },
+    {
       name: "staticPageHeaderLinks",
       title: "Static Pages im Header",
       type: "array",

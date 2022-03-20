@@ -97,5 +97,13 @@ export default {
       title: "SEO - Informationen (Startseite Land)",
       type: "seoObject",
     },
+    {
+      name: "render",
+      title: "Land rendern?",
+      description: "Inkludiert andere gerenderte Seiten für dieses Land",
+      type: "boolean",
+      initialValue: true,
+      validation: (Rule) => Rule.required(),
+    },
   ],
 };

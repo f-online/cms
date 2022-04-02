@@ -56,6 +56,11 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "url",
+      title: "Link zum Review",
+      type: "url",
+    },
+    {
       name: "countries",
       title: "Zugeordnete Länder",
       type: "array",

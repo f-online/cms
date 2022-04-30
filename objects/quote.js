@@ -32,6 +32,11 @@ export default {
       type: "string",
     },
     {
+      name: "website",
+      title: "Website",
+      type: "url",
+    },
+    {
       name: "year",
       title: "Jahr",
       type: "date",

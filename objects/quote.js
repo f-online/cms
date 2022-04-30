@@ -19,6 +19,19 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "authorImage",
+      title: "Bild des Autors",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "role",
+      title: "Rolle / Beruf",
+      type: "string",
+    },
+    {
       name: "year",
       title: "Jahr",
       type: "date",
@@ -28,4 +41,17 @@ export default {
       },
     },
   ],
+  preview: {
+    select: {
+      quote: "quote",
+      image: "authorImage",
+      author: "author",
+      year: "year",
+    },
+    prepare: ({ quote, image, author, year }) => ({
+      title: `Zitat: ${quote}`,
+      subtitle: `${author} - ${year}`,
+      media: image,
+    }),
+  },
 };

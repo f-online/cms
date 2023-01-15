@@ -1,5 +1,5 @@
 import { FaFileAlt as icon } from "react-icons/fa";
-import SlugInput from "sanity-plugin-better-slug";
+import { SlugInput } from 'sanity-plugin-prefixed-slug';
 
 export default {
   name: "staticPage",
@@ -33,10 +33,12 @@ export default {
       title: "URL",
       type: "slug",
       validation: (Rule) => Rule.required(),
-      inputComponent: SlugInput,
+      components: {
+        input: SlugInput,
+      },
       options: {
         source: "title",
-        basePath: "https://f-online.app/{cc}",
+        urlPrefix: "https://f-online.app/{cc}",
         maxLength: 100,
       },
       description:

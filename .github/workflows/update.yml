@@ -8,13 +8,10 @@ jobs:
     runs-on: ubuntu-18.04
     name: Update sanity
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Update sanity
-        uses: sanity-io/github-action-sanity@v0.4-alpha
-        env:
-          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
-        with:
-          args: . upgrade
+        run: yarn add sanity@latest # Not problematic as only a PR gets created
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:

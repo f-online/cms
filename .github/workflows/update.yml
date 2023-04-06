@@ -5,7 +5,7 @@ on:
     - cron: "0 5 * * 0"
 jobs:
   update-sanity:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     name: Update sanity
     steps:
       - name: Checkout code

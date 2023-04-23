@@ -9,7 +9,7 @@ jobs:
     name: Update sanity
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Update sanity
         run: yarn add sanity@latest # Not problematic as only a PR gets created
       - name: Create Pull Request

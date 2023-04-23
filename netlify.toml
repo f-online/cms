@@ -1,5 +1,5 @@
 [build]
-  command = "npm install -g @sanity/cli && sanity build"
+  command = "npm run build"
   publish = "dist/"
 [[redirects]]
   from="/*"

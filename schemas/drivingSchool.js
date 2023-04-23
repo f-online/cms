@@ -72,7 +72,7 @@ export default {
     },
     prepare: ({ name, country, region, logo }) => ({
       title: name,
-      subtitle: country + " / " + region,
+      subtitle: `${country} / ${region}`,
       media: logo,
     }),
   },

@@ -862,10 +862,10 @@
   resolved "https://registry.yarnpkg.com/@sanity/color/-/color-2.2.5.tgz#6b28578573859495ed1ffd5491322cb8e90b3e07"
   integrity sha512-tTi22KoKuER3sldXYl4c1Dq2zU7tMLDkljFiaUKVkBbu4PBvRGCFw75kXZnD2b4Bsp6vin+7sI+AKdCKRhfRuw==
 
-"@sanity/dashboard@^3.1.3":
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/@sanity/dashboard/-/dashboard-3.1.3.tgz#bc23c527fdc2eb2fefaa994e24ec68c36986254b"
-  integrity sha512-0lHClZCkTiTsBpJs8LQTQuJwdtr2YHdu+SQy/1X+a1GxLUaGphB9W3aMVSw6WBczcgw1hGGKmAI9pMi9V6Sj/g==
+"@sanity/dashboard@^3.1.4":
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/@sanity/dashboard/-/dashboard-3.1.4.tgz#edefd6abd1676481fb327d029178bde72a17097c"
+  integrity sha512-JUWE9Rew8yFr7DqqPE+1AK69eWgy0zng4/OxreauQYunhu1Zauon73WPMQPafRkWzCRDMMWxCitOUkrNQoZEJQ==
   dependencies:
     "@sanity/icons" "^2.0.0"
     "@sanity/image-url" "^1.0.1"

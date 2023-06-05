@@ -24,7 +24,7 @@
     "sanity": "^3.11.5",
     "sanity-plugin-dashboard-widget-netlify": "^2.0.1",
     "sanity-plugin-prefixed-slug": "^2.0.0",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

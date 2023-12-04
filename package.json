@@ -15,7 +15,7 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/dashboard": "^3.1.5",
+    "@sanity/dashboard": "^3.1.6",
     "@sanity/vision": "^3.20.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",

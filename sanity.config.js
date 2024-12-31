@@ -23,8 +23,8 @@ export default defineConfig({
                     sites: [
                       {
                         title: "Landingpage",
-                        apiId: "4331decf-545d-4a76-b2f4-5eeb3dbea97b",
-                        buildHookId: "6240c05da8b5c62e7066d694",
+                        apiId: "73158e33-2956-4885-b5d1-3b4990fb4380",
+                        buildHookId: "67743c38644e61a55976d306",
                         name: "www.f-online.at",
                       },
                       {
